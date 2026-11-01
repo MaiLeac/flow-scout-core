@@ -20,7 +20,7 @@
       "name": "Testlio Platform Course",
       "description": "Learn to navigate and utilize Testlio to enhance your software testing efficiency.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/af244b50-5b09-459b-9715-8deb89227303/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "cfc89710-959f-11ed-8d56-12df8409b7af",
@@ -28,7 +28,7 @@
       "name": "How to earn the Functional Regression Testing Certification?",
       "description": "Gain the expertise needed to ace the exam and secure your certificate.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/d78f23c8-8e4f-4a1f-9c33-cc8bb2df7074/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "081ed056-95a0-11ed-8d56-12df8409b7af",
@@ -36,7 +36,7 @@
       "name": "Payments Testing Basics",
       "description": "Cover testing payment systems, including their challenges and best practices for secure and reliable financial transactions.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/73fdc629-7461-4c4d-97f5-da81a03b3e1b/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "b624916c-95a0-11ed-8d56-12df8409b7af",
@@ -60,7 +60,7 @@
       "name": "Issue Reporting Course",
       "description": "Learn strategies for reporting software issues to foster efficient communication between testers and developers, leading to prompt resolution.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/974fdfe5-72db-4187-9599-bd8150875cce/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "a8373e47-b81e-11ed-8d56-12df8409b7af",
@@ -92,7 +92,7 @@
       "name": "Freelancer Conduct Guidelines",
       "description": "Learn essential principles of professional conduct in freelancing, fundamental for your success and reputation on the Testlio platform.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/c5eff27a-8918-4c5e-8776-f62f67ef10e5/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "5e49dca3-db08-11ee-8dec-0ab48a92cb33",
@@ -132,7 +132,7 @@
       "name": "Intro to Testing AI-Powered Applications",
       "description": "Learn how to test AI-powered applications across different input types.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/48cf7cc2-48e3-4f42-a26d-159a35b020cf/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "9af833c3-cb97-11f0-9ca8-0ab48a92cb33",
@@ -140,7 +140,7 @@
       "name": "Beginner's Guide to AI",
       "description": "Gain a solid foundation for understanding the rapidly evolving field of AI.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/caebd673-0647-4e78-b317-21896af4ee22/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "cbb9712c-5821-11f1-9aeb-128f4e695f45",
@@ -148,7 +148,7 @@
       "name": "Freelancer Security & Privacy Training",
       "description": "Learn your responsibilities for security and privacy while working as a freelancer with Testlio.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/25efcedf-350a-4716-9d6a-67982395a4a5/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "cbb97401-5821-11f1-9aeb-128f4e695f45",
