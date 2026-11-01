@@ -1,42 +1,58 @@
-# AGENT RULES & DIRECTIVES FOR CROWDTESTING
+# Agent Rules for Crowdtesting
 
-> **Purpose:** This file is the supreme instruction set for any AI Agent (Antigravity, Codex, Cursor, Claude, ChatGPT, Windsurf) participating in exploratory testing and bug hunting.
+Mục tiêu: tìm **bug thật, trong scope, chưa trùng**, và giao lại bằng chứng đủ để con người xác minh/nộp nhanh. Không tối ưu theo số lượng nghi vấn; tối ưu theo tỷ lệ được duyệt (`Approved` — ưu tiên `Very Valuable` và `Somewhat Valuable`).
 
----
+## 0. Hệ thống tri thức & Thứ tự ưu tiên nguồn sự thật (Source-of-Truth Hierarchy)
 
-## 1. Core Operating Philosophy
-1. **Act from End-User Perspective:** Always interact as a real human user through genuine interface actions. No inspecting hidden DOM nodes, no complaining about CSS offscreen transforms (`translate-x-full`), and no accessibility audit nitpicks (`aria-label`, missing alt tags) unless the test cycle explicitly demands WCAG accessibility.
-2. **Clean Entry Point:** Always start reproduction steps directly from the authorized homepage or designated entry URL. Never navigate directly into internal protected endpoints (e.g. `/air/listing?` directly) to avoid triggering WAF/Akamai blocks.
-3. **Evidence Over Speculation:** Every claim must be backed by reproducible steps, verifiable state changes, and screenshot/video evidence.
+Trước khi khám phá, sàng lọc hoặc viết báo cáo, agent phải tra cứu hệ thống [`knowledge/`](knowledge/README.md) theo thứ tự ưu tiên tuyệt đối sau:
 
----
+1. **Quy định của Cycle hiện tại:** `Overview`, `Announcements`, `Issue Reporting Instructions`, `Slot / Test Case Instructions`, `Known Issues` và chỉ dẫn trực tiếp của `TTL / TE` trong Cycle Chat hoặc Info Request.
+2. **uTest Academy chính thức:** Các khóa học tại `https://www.utest.com/academy` (chỉ mục tại [`knowledge/academy/course-index.json`](knowledge/academy/course-index.json), [`knowledge/academy/source-links.md`](knowledge/academy/source-links.md) và [`guidelines/utest_academy_handbook.md`](guidelines/utest_academy_handbook.md)).
+3. **Bằng chứng thực tế từ các Cycle & Issue lịch sử:** [`knowledge/cycles/cycle-index.json`](knowledge/cycles/cycle-index.json) và [`knowledge/issues/issue-index.json`](knowledge/issues/issue-index.json).
+4. **Playbook & Thư viện mẫu lỗi của Repo:**
+   - [`knowledge/agent-guides/discovery-playbook.md`](knowledge/agent-guides/discovery-playbook.md)
+   - [`knowledge/agent-guides/triage-playbook.md`](knowledge/agent-guides/triage-playbook.md)
+   - [`knowledge/agent-guides/issue-writing-playbook.md`](knowledge/agent-guides/issue-writing-playbook.md)
+   - [`knowledge/agent-guides/duplicate-check-playbook.md`](knowledge/agent-guides/duplicate-check-playbook.md)
+   - [`knowledge/patterns/pattern-index.json`](knowledge/patterns/pattern-index.json) & [`knowledge/rejection-lessons/rejection-index.json`](knowledge/rejection-lessons/rejection-index.json)
+   - [`heuristics/BUG_LESSONS.md`](heuristics/BUG_LESSONS.md) & [`heuristics/MASTER_BUG_LIBRARY.md`](heuristics/MASTER_BUG_LIBRARY.md)
 
-## 2. The 4-Question Triage Filter (Before Confirming Any Bug)
-Before escalating any anomaly as a bug, the Agent must answer:
-1. **What is the expected behavior?** Is there clear, factual justification why the software must behave differently?
-2. **Can this be explained by normal product logic?** (e.g., dynamic inventory, rate limits, promotional stacking rules, expired sessions).
-3. **What is the cheapest test to distinguish normal behavior from a defect?**
-4. **What if it cannot be proven?** Mark as *Inconclusive/Lead* instead of making false claims.
+## 1. Bốn cổng bắt buộc trước khi báo cho người dùng
 
----
+1. **Scope gate:** lỗi có nằm trong chức năng được phép test và không rơi vào mục cấm báo của cycle hiện tại không?
+2. **Duplicate gate:** lỗi có trùng với `Issues` hoặc `Known Issues` của **cycle hiện tại** không? (Lưu ý: giống mẫu lỗi trong `knowledge/issues/` từ cycle cũ là tín hiệu tốt để ưu tiên tìm, **không phải** duplicate của cycle mới).
+3. **Validity gate:** có mốc đối chiếu cụ thể để chứng minh đây là lỗi, không phải `Working as Designed` (`WAD`) không?
+4. **Value gate:** nếu lỗi giống nhóm từng bị `Won't Fix` (`WNF`, như lỗi đè khung ảnh editorial trên Celine `#7292278` hoặc link phụ `'Give Us Feedback'` dưới footer `#7297917`), hạ ưu tiên và tìm lỗi chức năng trước.
 
-## 3. The TTL "Devil's Advocate" Test
-Ask yourself: *How would a strict Test Team Lead (TTL) try to reject this bug?*
-- Is it a **Duplicate** of another issue in the cycle?
-- Is it a **Known Issue / Out of Scope** per cycle instructions?
-- Is it **Working as Designed (WAD)** under specific business rules?
-If you cannot defend against the TTL's rejection, do not submit it.
+Nếu chưa qua cả 4 cổng, chỉ ghi là `hypothesis` hoặc `low-priority candidate`, không trình bày như bug đã xác nhận.
 
----
+## 2. Thứ tự làm việc trong một cycle mới
 
-## 4. Standard Bug Report Format (Action-Only Steps)
-- **Title:** `[Area/Component] - [Specific Action] causes [Observed Failure/Mismatch]`
-- **Classification:** Functional / Visual / Content / Performance
-- **Severity:** Critical / High / Medium / Low
-- **Steps to Reproduce:**
-  1. Go to `https://target.com/`
-  2. Perform [Action 1]
-  3. Perform [Action 2]
-  4. Observe [Result]
-- **Actual Result:** Precise description of the failure without emotional exaggeration.
-- **Expected Result:** Clear statement of correct behavior based on UI contracts and product rules.
+1. Đọc `Overview`, `In Scope`, `Out of Scope`, `Do Not Report`, `Known Issues`, yêu cầu thiết bị/ngôn ngữ và yêu cầu bằng chứng.
+2. Mở danh sách `Issues` hiện tại của cycle để biết:
+   - lỗi nào đã có người báo (nạp vào `currentIssues` của `bug-hunter/configs/<cycle>.scout.json`),
+   - nhóm lỗi nào đang được `Approved` (`Very Valuable` / `Somewhat Valuable`),
+   - nhóm nào bị `Rejected (WAD)` hoặc `Approved (WNF)`.
+3. Chọn 2–3 phép thử từ [`knowledge/patterns/pattern-index.json`](knowledge/patterns/pattern-index.json) và [`heuristics/MASTER_BUG_LIBRARY.md`](heuristics/MASTER_BUG_LIBRARY.md) khớp với chức năng thật của sản phẩm.
+4. Thực hiện phép thử theo đường ngắn nhất từ trang chủ/màn hình chính.
+5. Khi thấy nghi vấn:
+   - kiểm tra lại điều kiện đầu vào,
+   - kiểm tra mốc đối chiếu (trang chi tiết vs. bộ lọc danh sách, giá trước/sau khi thêm-xóa, mobile web vs. native app cùng mạng),
+   - rút gọn bước tái hiện (mỗi bước 1 hành động, **không** dùng `Observe` làm bước riêng trên uTest),
+   - kiểm tra lại danh sách `Issues` của cycle trước khi kết luận.
+
+## 3. Quy tắc trung thực với nguồn dữ liệu
+
+- Chỉ gọi một bug là `Approved`, `Approved (WNF)`, `Rejected (WAD)`, `New` khi đã thấy trạng thái đó trong nguồn thực tế.
+- Nếu chỉ thấy danh sách issue mà chưa mở được chi tiết từng bug, phải ghi rõ đó là suy luận từ tiêu đề (`list_level_summary`).
+- Không suy đoán tâm lý reviewer. Mọi kết luận phải gắn với: quy định cycle, hành vi sản phẩm quan sát được, hoặc trạng thái review đã xác nhận.
+
+## 4. Định dạng bàn giao một bug khả thi
+
+- **Title:** đúng mẫu của cycle (`OS/Device - Area - Issue Description`).
+- **Classification:** `Type` | `Severity` | `Frequency` | `Source` (`Exploratory` ngoài TC; `Structured` trong TC) | `Environment`.
+- **Why it is valid:** mốc đối chiếu cụ thể trên chính sản phẩm chứng minh hành vi hiện tại mâu thuẫn với thông tin/chức năng của sản phẩm.
+- **Why it is not WAD/OOS/Duplicate:** 1–3 dòng đối chiếu với scope và issue list hiện tại.
+- **Shortest steps:** đánh số từ trang chủ/app launch, mỗi bước một thao tác, tuyệt đối không có bước `Observe` đứng riêng.
+- **Exact test data:** ngày, từ khoá, sản phẩm/chuyến/khách sạn, bộ lọc, tiền tệ, locale.
+- **Evidence checklist:** đúng loại file mà cycle yêu cầu (screenshot có URL bar + khung đỏ, video `.mp4` tắt mic từ trang chủ, console log có `Preserve log` + `Show timestamps` bắt đầu bằng `Navigated to <homepage>`, hoặc `adb logcat -v threadtime`, đã che mọi PII kể cả tên giả).

@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-01T17:20:00+07:00",
+  "canonical_source_policy": "Live official uTest Academy URLs (https://www.utest.com/academy/...) and current Cycle Overviews are ALWAYS the primary source of truth. Local repository summaries in guidelines/utest_academy_handbook.md and knowledge/academy/ serve as structured retrieval indexes and fallback caches when an authenticated browser session is unavailable.",
+  "tracks": [
+    {
+      "track_id": 1,
+      "track_name": "Getting Started",
+      "track_progress": "3/3 Courses (100% Completed - verified in media_1793527526439_36a5bd90.png)",
+      "courses": [
+        {
+          "course_id": 1,
+          "course_name": "Introduction to uTest",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/1/courses/1/lessons/welcome-utest",
+          "handbook_section": "Section 23 (23.1 - 23.5)",
+          "lessons": [
+            "1. Welcome to uTest",
+            "2. How uTest Works",
+            "3. What is Software Testing?",
+            "4. uTest Academy and Certification Program",
+            "5. Helpful Definitions"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 8,
+          "course_name": "uTest.com Navigation",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/1/courses/8/lessons/top-navigation-bar",
+          "handbook_section": "Section 24 (24.1 - 24.6)",
+          "lessons": [
+            "1. Top Navigation Bar",
+            "2. Profile Menu",
+            "3. Home",
+            "4. Academy Page and Grade",
+            "5. Projects",
+            "6. Community, Footer and AI Support Agent"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 30,
+          "course_name": "uTest Basics",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/1/courses/30/lessons",
+          "handbook_section": "Section 25 (25.1 - 25.5)",
+          "lessons": [
+            "1. Terms of Use and Guidelines",
+            "2. Tester Selection",
+            "3. Payments",
+            "4. Tester Ratings",
+            "5. Tester Security and GDPR"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        }
+      ]
+    },
+    {
+      "track_id": 2,
+      "track_name": "Testing in the uTest Platform",
+      "track_progress": "7/7 Courses (100% Completed - verified in media_1793527526439_36a5bd90.png)",
+      "courses": [
+        {
+          "course_id": 34,
+          "course_name": "Testing Basics",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/34/lessons/testing-types",
+          "handbook_section": "Section 26 (26.1 - 26.9) & Sections 6-7",
+          "lessons": [
+            "1. What is Testing?",
+            "2. What is a Bug (Issue)?",
+            "3. What is a Valid Bug?",
+            "4. Testing a Website or an App",
+            "5. When is an Issue Not an Issue?",
+            "6. Test Case Execution - Breadth, Depth and Observations",
+            "7. Installing Apps on Mobile Devices",
+            "8. Common Website Elements and Pages",
+            "9. Best Practices"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 31,
+          "course_name": "uTest Cycle Process",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/31/lessons/test-cycle-terms",
+          "handbook_section": "Sections 1-4, 15-17, 22",
+          "lessons": [
+            "1. Test Cycle Terms",
+            "2. Test Cycle Process at uTest",
+            "3. uTest Multi-Factor Authentication (MFA)",
+            "4. Accepting an Invitation",
+            "5. Test Cycle Information",
+            "6. Reporting",
+            "7. Communication",
+            "8. Tester Emails",
+            "9. End of the Test Cycle"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 33,
+          "course_name": "Slots, Test Cases and Reviews",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/33/lessons/what-is-a-slot",
+          "handbook_section": "Sections 4-5, 15-16, 22",
+          "lessons": [
+            "1. What is a Slot?",
+            "2. Slots Page Overview",
+            "3. Claiming a Slot",
+            "4. What is a Test Case?",
+            "5. Attachments in a Test Case",
+            "6. Editing and Updating a Test Case",
+            "7. Responding to Messages in a Test Case",
+            "8. Responding to Info Request in a Test Case",
+            "9. Unclaiming a Slot",
+            "10. Best Practices for Slots and Test Cases",
+            "11. Slots: Slot Waitlist Feature",
+            "12. Slots: Slot Claim Criteria Feature",
+            "13. Slots: Slot Credentials Feature",
+            "14. Bug Fix Verification",
+            "15. Tester Review",
+            "16. TestRail"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 17,
+          "course_name": "Issue Reports",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/17/lessons/understanding-bug-report",
+          "handbook_section": "Sections 7-19, 22",
+          "lessons": [
+            "1. Understanding Issue Report",
+            "2. How to Write an Issue Report",
+            "3. How to Edit an Issue Report",
+            "4. Issue report information fields",
+            "5. Severity vs Value",
+            "6. Bug Rejections",
+            "7. Confirm Issue feature",
+            "8. Issue Quality Review",
+            "9. Known Issues",
+            "10. Best Practices"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 32,
+          "course_name": "uTest Mobile App",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/32/lessons/utest-app-introduction",
+          "handbook_section": "Section 27 (27.1 - 27.5)",
+          "lessons": [
+            "1. Navigation and Cycle Page",
+            "2. Accept/Decline and Slot",
+            "3. Reporting Issues on App",
+            "4. Executing Test Cases on App",
+            "5. SRS and Chat"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 35,
+          "course_name": "AcademyBugs.com",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/35/lessons",
+          "handbook_section": "Section 28",
+          "lessons": [
+            "1. Examples of Bugs (6 examples)",
+            "2. Types of Bugs (5 types)",
+            "3. Find Bugs (25 planted bugs, find >=20)",
+            "4. Report Bugs (5 practice reports)"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        },
+        {
+          "course_id": 46,
+          "course_name": "Academy Tips and Tricks",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/2/courses/46/lessons/Terms-and-Acronyms",
+          "handbook_section": "Section 21 (21.1 - 21.8)",
+          "lessons": [
+            "1. Terms and Acronyms (/Terms-and-Acronyms)",
+            "2. The Importance of Reading (/The-Importance-of-Reading)",
+            "3. The Team Behind Test Cycles (/The-Team-Behind-Test-Cycles)",
+            "4. Building a Positive Reputation at uTest (/reputation)",
+            "5. Most Common Mistakes In Academy Practice Cycles (/most-common-mistakes-in-academy-practice-cycles)",
+            "6. Anger Management, Issue Comprehension and Resolution (/anger-management-issue-comprehension-and-resolution)",
+            "7. Effective Written Communication (/effective-written-communication)",
+            "8. The impact of AI on uTesters (/the-impact-of-AI-on-uTesters)"
+          ],
+          "access_status": "verified_from_authenticated_session_and_catalog_screenshot"
+        }
+      ]
+    },
+    {
+      "track_id": 6,
+      "track_name": "Testing Tools",
+      "track_progress": "5/5 Courses Indexed",
+      "courses": [
+        {
+          "course_id": 37,
+          "course_name": "Screenshots",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/6/courses/37/lessons/basics-screenshots",
+          "handbook_section": "Section 11 & Section 22",
+          "lessons": [
+            "1. Basics of Screenshots",
+            "2. Windows",
+            "3. macOS",
+            "4. Linux",
+            "5. Android",
+            "6. iOS"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        },
+        {
+          "course_id": 38,
+          "course_name": "Screen Recordings",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/6/courses/38/lessons/handbrake",
+          "handbook_section": "Section 11 & Section 22",
+          "lessons": [
+            "Basics of Screen Recordings",
+            "OS Capture Tools",
+            "How to Compress Videos (HandBrake)"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        },
+        {
+          "course_id": 39,
+          "course_name": "Browser Logs",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/6/courses/39/lessons/desktop-browser-logs",
+          "handbook_section": "Section 12 & Section 22",
+          "lessons": [
+            "1. Basics of Logs",
+            "2. Desktop Browser Logs (/desktop-browser-logs)",
+            "3. Desktop Browser HAR Logs",
+            "4. Mobile Browser Logs (/mobile-browser-logs)",
+            "5. Android Browser HAR Logs"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        },
+        {
+          "course_id": 40,
+          "course_name": "Mobile Device Logs",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy",
+          "handbook_section": "Section 12 & Section 22",
+          "lessons": [
+            "1. Android Device Logs",
+            "2. iOS Device Logs",
+            "3. iOS Crash Logs"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        },
+        {
+          "course_id": 41,
+          "course_name": "Web Debugging Proxy",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy",
+          "handbook_section": "Section 13 & Section 22",
+          "lessons": [
+            "1. What is a Web Debugging Proxy?",
+            "2. Charles Proxy for Desktop",
+            "3. Charles Proxy for Mobile",
+            "4. Charles Proxy Profile",
+            "5. Charles Proxy Filter Traffic",
+            "6. Collecting Charles Proxy Logs without a WiFi Router",
+            "7. Fiddler for Desktop",
+            "8. Fiddler for Mobile",
+            "9. FAQ"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        }
+      ]
+    },
+    {
+      "track_id": 3,
+      "track_name": "Data Security & Functional Testing",
+      "track_progress": "2/2 Courses Indexed",
+      "courses": [
+        {
+          "course_id": 44,
+          "course_name": "Personally Identifiable Information (PII)",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy/tracks/3/courses/44/lessons",
+          "handbook_section": "Section 14 & Section 22",
+          "lessons": [
+            "1. What is Personally Identifiable Information (PII)",
+            "2. Why should you blur PII?",
+            "3. Images: How to blur/block PII?",
+            "4. Full website page capture",
+            "5. PDF: How to blur/block PII?",
+            "6. Videos: How to blur/block PII?"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        },
+        {
+          "course_id": 42,
+          "course_name": "Functional Testing",
+          "status": "Completed",
+          "official_url": "https://www.utest.com/academy",
+          "handbook_section": "Sections 6-7 & Section 22",
+          "lessons": [
+            "1. Introduction to Functional Testing",
+            "2. Software Development Life Cycle (SDLC)",
+            "3. Manual Testing VS Automation Testing",
+            "4. Test Cases Testing",
+            "5. Exploratory Testing",
+            "6. Functional Testing Techniques",
+            "7. Functional Testing Vs. Non-Functional Testing"
+          ],
+          "access_status": "verified_from_authenticated_session"
+        }
+      ]
+    },
+    {
+      "track_id": 4,
+      "track_name": "Academy Certification Program (Practice Cycles)",
+      "track_progress": "5/5 Practice Test Cases Approved (12353130, 12382341, 12406429, 12428334, 12439394)",
+      "courses": [
+        {
+          "course_id": 101,
+          "course_name": "Introduction to Testing",
+          "status": "Approved (TC #12353130, Build 1)",
+          "official_url": "https://www.utest.com/academy"
+        },
+        {
+          "course_id": 102,
+          "course_name": "Computer Testing",
+          "status": "Approved (TC #12382341, Build 2)",
+          "official_url": "https://www.utest.com/academy"
+        },
+        {
+          "course_id": 103,
+          "course_name": "Mobile Device Testing",
+          "status": "Approved (TC #12406429, Build 3, Cycle 562000)",
+          "official_url": "https://www.utest.com/academy"
+        },
+        {
+          "course_id": 104,
+          "course_name": "Charles Proxy Testing",
+          "status": "Approved (TC #12428334, Build 4)",
+          "official_url": "https://www.utest.com/academy"
+        },
+        {
+          "course_id": 105,
+          "course_name": "Academy Challenge Testing",
+          "status": "Approved (TC #12439394, Build 5, Cycle 562706, Rank #1 Leader)",
+          "official_url": "https://www.utest.com/academy"
+        }
+      ]
+    },
+    {
+      "track_id": 5,
+      "track_name": "Specialized Testing Tracks (Pages 2 & 3 of Catalog)",
+      "track_progress": "10 Specialized Courses Indexed in Handbook Sections 29-38",
+      "courses": [
+        {
+          "course_id": 47,
+          "course_name": "Localization Testing",
+          "official_url": "https://www.utest.com/academy/tracks/12/courses/47/lessons/localization-testing-introduction",
+          "handbook_section": "Section 29"
+        },
+        {
+          "course_id": 3,
+          "course_name": "Payment Testing",
+          "official_url": "https://www.utest.com/academy/tracks/7/courses/3/lessons/what-is-payment-testing",
+          "handbook_section": "Section 30"
+        },
+        {
+          "course_id": 29,
+          "course_name": "Usability Testing",
+          "official_url": "https://www.utest.com/academy/tracks/5/courses/29/lessons/what-is-usability-testing",
+          "handbook_section": "Section 31"
+        },
+        {
+          "course_id": 28,
+          "course_name": "API Testing",
+          "official_url": "https://www.utest.com/academy/tracks/9/courses/28/lessons/what-is-api",
+          "handbook_section": "Section 32"
+        },
+        {
+          "course_id": 146,
+          "course_name": "Security Testing",
+          "official_url": "https://www.utest.com/academy/tracks/13/courses/146/lessons/security-testing-introduction",
+          "handbook_section": "Section 33"
+        },
+        {
+          "course_id": 45,
+          "course_name": "Voice Testing",
+          "official_url": "https://www.utest.com/academy/tracks/8/courses/45/lessons/Voice-Testing-Overview",
+          "handbook_section": "Section 34"
+        },
+        {
+          "course_id": 19,
+          "course_name": "Amazon Alexa Testing",
+          "official_url": "https://www.utest.com/academy/tracks/8/courses/19/lessons",
+          "handbook_section": "Section 35"
+        },
+        {
+          "course_id": 80,
+          "course_name": "Streaming Apps Testing",
+          "official_url": "https://www.utest.com/academy/tracks/11/courses/80/lessons/Introduction-to-Streaming-Apps-Testing",
+          "handbook_section": "Section 36"
+        },
+        {
+          "course_id": 81,
+          "course_name": "Connected TV Devices (CTV)",
+          "official_url": "https://www.utest.com/academy/tracks/11/courses/81/lessons",
+          "handbook_section": "Section 37"
+        },
+        {
+          "course_id": 43,
+          "course_name": "Online Gambling Testing",
+          "official_url": "https://www.utest.com/academy/tracks/10/courses/43/lessons/introduction-to-gambling-testing",
+          "handbook_section": "Section 38"
+        }
+      ]
+    }
+  ]
+}

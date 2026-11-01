@@ -1,20 +1,278 @@
 {
   "version": 1,
   "cycle": {
-    "id": "562706", "title": "OneTravel Academy Challenge — constrained scout",
+    "id": "562706",
+    "title": "OneTravel Academy Challenge — constrained scout",
     "overview": "Imported from supplied overview. Search flights/hotels/cars and booking flow before final purchase. Current full test-case definitions have not been imported; this configuration cannot claim complete test-case coverage.",
-    "inScope": ["OneTravel flight/hotel/car search and selection", "Filters, sorting, valid itinerary changes, state and price consistency", "Booking flow before purchase; local version when available"],
-    "outOfScope": ["Partner/external sites; contact us", "Orders, payments or adding payment methods", "Field validation, accessibility, usability, security", "Minor visuals, resized-window issues", "Current-cycle duplicates including permutations"],
-    "sources": ["User supplied Academy Challenge overview", "https://platform.utest.com/testcycles/562706/", "MASTER_BUG_LIBRARY.md and BUG_LESSONS.md are heuristics, not duplicate evidence"],
-    "evidence": ["Highlighted PNG/JPG", "Silent MP4 recording", "Console TXT/LOG with timestamps and Navigated to homepage", "Mask personal information", "Cycle requires issue reproduced more than twice before submission"],
-    "currentIssues": {"status": "not-checked", "items": []}
+    "inScope": [
+      "OneTravel flight/hotel/car search and selection",
+      "Filters, sorting, valid itinerary changes, state and price consistency",
+      "Booking flow before purchase; local version when available"
+    ],
+    "outOfScope": [
+      "Partner/external sites; contact us",
+      "Orders, payments or adding payment methods",
+      "Field validation, accessibility, usability, security",
+      "Minor visuals, resized-window issues",
+      "Current-cycle duplicates including permutations"
+    ],
+    "sources": [
+      "User supplied Academy Challenge overview",
+      "https://platform.utest.com/testcycles/562706/",
+      "MASTER_BUG_LIBRARY.md and BUG_LESSONS.md are heuristics, not duplicate evidence"
+    ],
+    "evidence": [
+      "Highlighted PNG/JPG",
+      "Silent MP4 recording",
+      "Console TXT/LOG with timestamps and Navigated to homepage",
+      "Mask personal information",
+      "Cycle requires issue reproduced more than twice before submission"
+    ],
+    "currentIssues": {
+      "status": "checked",
+      "checkedAt": "2026-11-01T17:20:00+07:00",
+      "items": [
+        {
+          "id": "7297173",
+          "title": "Windows 11 - Flight Search Results - Carry-on filter hides eligible flights",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297173",
+          "trigger": "flight-search-filter",
+          "actual": "Windows 11 - Flight Search Results - Carry-on filter hides eligible flights"
+        },
+        {
+          "id": "562706-MAI-BUG-2",
+          "title": "Windows 11 - Hotel Checkout - Advertised promo code OCTHTL displayed directly on hotel card is rejected as not valid at checkout",
+          "url": "https://platform.utest.com/testcycles/562706/issues",
+          "trigger": "hotel-checkout-promo",
+          "actual": "Windows 11 - Hotel Checkout - Advertised promo code OCTHTL displayed directly on hotel card is rejected as not valid at checkout"
+        },
+        {
+          "id": "562706-MAI-BUG-3",
+          "title": "Windows 11 - Packages - Hotel for part of my trip date picker opens with all future dates disabled when flight dates are not yet selected",
+          "url": "https://platform.utest.com/testcycles/562706/issues",
+          "trigger": "packages-partial-stay-calendar",
+          "actual": "Windows 11 - Packages - Hotel for part of my trip date picker opens with all future dates disabled when flight dates are not yet selected"
+        },
+        {
+          "id": "7296862",
+          "title": "Account Settings - Unable to change the account password",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7296862",
+          "trigger": "account-password",
+          "actual": "Account Settings - Unable to change the account password"
+        },
+        {
+          "id": "7297646",
+          "title": "Windows 11 - Review Trip Details - Total price drops after adding and removing an adult",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297646",
+          "trigger": "flight-review-price",
+          "actual": "Windows 11 - Review Trip Details - Total price drops after adding and removing an adult"
+        },
+        {
+          "id": "7297158",
+          "title": "Windows 11 - Hotel + Car search - Second room and its travelers are missing from search results",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297158",
+          "trigger": "hotel-car-search-rooms",
+          "actual": "Windows 11 - Hotel + Car search - Second room and its travelers are missing from search results"
+        },
+        {
+          "id": "7297669",
+          "title": "Windows 11 - Review Trip Details - Unable to remove the second adult passenger",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297669",
+          "trigger": "flight-review-passengers",
+          "actual": "Windows 11 - Review Trip Details - Unable to remove the second adult passenger"
+        },
+        {
+          "id": "7297127",
+          "title": "Windows 10 - Home page - Currency selection not changing after refreshing the page",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297127",
+          "trigger": "homepage-currency",
+          "actual": "Windows 10 - Home page - Currency selection not changing after refreshing the page"
+        },
+        {
+          "id": "7297096",
+          "title": "Windows 11 Pro - Service Fees - The terms and conditions link incorrectly redirects to the homepage",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297096",
+          "trigger": "service-fees-links",
+          "actual": "Windows 11 Pro - Service Fees - The terms and conditions link incorrectly redirects to the homepage"
+        },
+        {
+          "id": "7297698",
+          "title": "Windows 11 Pro - Flight Status - Flights remain filtered by British Airways despite the empty filter",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297698",
+          "trigger": "flight-status-filter",
+          "actual": "Windows 11 Pro - Flight Status - Flights remain filtered by British Airways despite the empty filter"
+        },
+        {
+          "id": "7297626",
+          "title": "Windows 10 Pro - Hotel List - Shortlist disappears when refresh and fails to sync with Detail tab",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297626",
+          "trigger": "hotel-shortlist",
+          "actual": "Windows 10 Pro - Hotel List - Shortlist disappears when refresh and fails to sync with Detail tab"
+        },
+        {
+          "id": "7297688",
+          "title": "Windows 10 Pro - Home Page - Phu Quoc Island trip cards display broken images with alt text",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297688",
+          "trigger": "homepage-trip-cards",
+          "actual": "Windows 10 Pro - Home Page - Phu Quoc Island trip cards display broken images with alt text"
+        },
+        {
+          "id": "7297794",
+          "title": "Windows 11 - Home Page - Hotel deal subtitles display dates in Vietnamese",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297794",
+          "trigger": "homepage-localization-dates",
+          "actual": "Windows 11 - Home Page - Hotel deal subtitles display dates in Vietnamese"
+        },
+        {
+          "id": "7297917",
+          "title": "Footer - Give Us Feedback link does not respond",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297917",
+          "trigger": "footer-feedback",
+          "actual": "Footer - Give Us Feedback link does not respond"
+        },
+        {
+          "id": "7296911",
+          "title": "Payment card information is not wiped when clicking Clear All",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7296911",
+          "trigger": "payment-clear-all",
+          "actual": "Payment card information is not wiped when clicking Clear All"
+        },
+        {
+          "id": "7298627",
+          "title": "Flight search result baggage preview icon conflicts with baggage information in review",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7298627",
+          "trigger": "flight-baggage-preview",
+          "actual": "Flight search result baggage preview icon conflicts with baggage information in review"
+        },
+        {
+          "id": "7297934",
+          "title": "Promo code applied in price table does not match discount condition",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297934",
+          "trigger": "promo-discount",
+          "actual": "Promo code applied in price table does not match discount condition"
+        },
+        {
+          "id": "7297946",
+          "title": "Airport filter in Flight Status does not filter arrival airports",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297946",
+          "trigger": "flight-status-airport-filter",
+          "actual": "Airport filter in Flight Status does not filter arrival airports"
+        },
+        {
+          "id": "7297678",
+          "title": "Windows 11 - Car Listing - Selected Price Filter Does Not Match Displayed Car Prices",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297678",
+          "trigger": "car-price-filter",
+          "actual": "Windows 11 - Car Listing - Selected Price Filter Does Not Match Displayed Car Prices"
+        },
+        {
+          "id": "7297771",
+          "title": "Windows 10 64 bit - Multi city - Middle flight leg has no delete button",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297771",
+          "trigger": "multi-city-delete-leg",
+          "actual": "Windows 10 64 bit - Multi city - Middle flight leg has no delete button"
+        },
+        {
+          "id": "7297277",
+          "title": "Windows 10 - Flight Status - Calendar Does Not Allow Flight Date Selection",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297277",
+          "trigger": "flight-status-calendar",
+          "actual": "Windows 10 - Flight Status - Calendar Does Not Allow Flight Date Selection"
+        },
+        {
+          "id": "7297180",
+          "title": "Google Pixel 6 - Search Results Page - Connection Protection loads infinitely",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297180",
+          "trigger": "connection-protection-modal",
+          "actual": "Google Pixel 6 - Search Results Page - Connection Protection loads infinitely"
+        },
+        {
+          "id": "7297868",
+          "title": "Windows 11 - Hotel Details - Missing pictures of Family Room",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297868",
+          "trigger": "hotel-details-images",
+          "actual": "Windows 11 - Hotel Details - Missing pictures of Family Room"
+        },
+        {
+          "id": "7297550",
+          "title": "Windows 10 - My Trips - Recent search dates display in Portuguese",
+          "url": "https://platform.utest.com/testcycles/562706/issues/7297550",
+          "trigger": "my-trips-localization-dates",
+          "actual": "Windows 10 - My Trips - Recent search dates display in Portuguese"
+        }
+      ]
+    }
   },
-  "browser": {"headless": true, "channel": "chrome"},
-  "scope": {"allowedOrigins": ["https://www.onetravel.com"], "assetOrigins": [], "includePaths": ["^/$", "^/trip/", "^/air/", "^/cars/"], "excludePatterns": ["/info/contact", "/payment", "/profiles", "/press"]},
-  "safety": {"allowedActionNames": ["^(Flights|Hotels|Cars|Search|Search flights|Show more|Show less|Clear all filters|Sort by.*|Next|Previous)$"], "readOnlyPostRules": [], "privateDataSelectors": ["input", "[aria-label*=account i]"]},
-  "budgets": {"runtimeMs": 45000, "maxPages": 5, "maxStates": 10, "maxActions": 12, "maxActionsPerState": 3, "maxDepth": 1, "maxSignals": 30, "maxEvidence": 3, "workers": 1, "actionTimeoutMs": 4000, "navigationTimeoutMs": 15000, "settleMs": 500, "readinessTimeoutMs": 2000},
+  "browser": {
+    "headless": true,
+    "channel": "chrome"
+  },
+  "scope": {
+    "allowedOrigins": [
+      "https://www.onetravel.com"
+    ],
+    "assetOrigins": [],
+    "includePaths": [
+      "^/$",
+      "^/trip/",
+      "^/air/",
+      "^/cars/"
+    ],
+    "excludePatterns": [
+      "/info/contact",
+      "/payment",
+      "/profiles",
+      "/press"
+    ]
+  },
+  "safety": {
+    "allowedActionNames": [
+      "^(Flights|Hotels|Cars|Search|Search flights|Show more|Show less|Clear all filters|Sort by.*|Next|Previous)$"
+    ],
+    "readOnlyPostRules": [],
+    "privateDataSelectors": [
+      "input",
+      "[aria-label*=account i]"
+    ]
+  },
+  "budgets": {
+    "runtimeMs": 45000,
+    "maxPages": 5,
+    "maxStates": 10,
+    "maxActions": 12,
+    "maxActionsPerState": 3,
+    "maxDepth": 1,
+    "maxSignals": 30,
+    "maxEvidence": 3,
+    "workers": 1,
+    "actionTimeoutMs": 4000,
+    "navigationTimeoutMs": 15000,
+    "settleMs": 500,
+    "readinessTimeoutMs": 2000
+  },
   "tasks": [
-    {"id":"required-intake","lane":"test-case","feature":"Full original test case not supplied to engine","startUrl":"https://www.onetravel.com/","required":true,"steps":[{"id":"import-original","action":"manual","description":"Import every original step, including registration/preferences and other steps, from current cycle before executing the required sweeper"}]},
-    {"id":"search-scout","lane":"quick-win","feature":"Search controls","startUrl":"https://www.onetravel.com/","required":false,"steps":[],"crawl":true}
+    {
+      "id": "required-intake",
+      "lane": "test-case",
+      "feature": "Full original test case not supplied to engine",
+      "startUrl": "https://www.onetravel.com/",
+      "required": true,
+      "steps": [
+        {
+          "id": "import-original",
+          "action": "manual",
+          "description": "Import every original step, including registration/preferences and other steps, from current cycle before executing the required sweeper"
+        }
+      ]
+    },
+    {
+      "id": "search-scout",
+      "lane": "quick-win",
+      "feature": "Search controls",
+      "startUrl": "https://www.onetravel.com/",
+      "required": false,
+      "steps": [],
+      "crawl": true
+    }
   ]
 }

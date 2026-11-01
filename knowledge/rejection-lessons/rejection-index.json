@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-01T17:20:00+07:00",
+  "categories": [
+    {
+      "category_id": "REJ-WAD",
+      "title": "Working as Designed (WAD) & Business Logic Traps",
+      "rating_impact": "Neutral (does not hurt tester rating, but wastes time and slot quota)",
+      "verified_cases": [
+        "#7296911",
+        "OCT26-Flight-Promo",
+        "Lap-Infants-Validation",
+        "Flight-Status-Gate-Dash"
+      ],
+      "file": "knowledge/rejection-lessons/working-as-designed-and-domain-logic.md"
+    },
+    {
+      "category_id": "REJ-WNF",
+      "title": "Approved / Won't Fix (WNF) & Low-Value Traps",
+      "rating_impact": "Approved status, but 0.00 points on Academy Challenge Scorecard and low customer priority",
+      "verified_cases": [
+        "#7292278",
+        "#7297917"
+      ],
+      "file": "knowledge/rejection-lessons/wont-fix-and-editorial-traps.md"
+    },
+    {
+      "category_id": "REJ-DUP",
+      "title": "Duplicate (DUP), Known Issues & Permutation Hygiene",
+      "rating_impact": "Negative (hurts tester rating)",
+      "verified_cases": [
+        "#7297771",
+        "#7296862",
+        "#7297550-vs-#7297794"
+      ],
+      "file": "knowledge/rejection-lessons/duplicate-and-permutation-hygiene.md"
+    },
+    {
+      "category_id": "REJ-IR-DNFI",
+      "title": "Info Requests (IR), Attachment Compliance & DNFI Prevention",
+      "rating_impact": "Severe Negative if DNFI (2x negative rating impact) or unanswered IR within 48h",
+      "verified_cases": [
+        "#7297173-Console-Log-IR",
+        "PRACTICE-MAC-01-Observe-and-Source-IR"
+      ],
+      "file": "knowledge/rejection-lessons/info-request-and-attachment-compliance.md"
+    },
+    {
+      "category_id": "VAL-INTEL",
+      "title": "Value Intelligence & Leaderboard Optimization",
+      "rating_impact": "Maximizes Very Valuable (+2 pts) and Somewhat Valuable (+1 pt) approvals",
+      "verified_cases": [
+        "#7297173",
+        "#7297646",
+        "Cycle-562706-Scorecard"
+      ],
+      "file": "knowledge/rejection-lessons/value-and-scorecard-intelligence.md"
+    }
+  ]
+}

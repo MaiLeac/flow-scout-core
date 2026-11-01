@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FlowScoutCoreIssueRecord",
+  "description": "Canonical schema for uTest historical and reference bug issue records in MaiLeac/flow-scout-core.",
+  "type": "object",
+  "required": [
+    "issue_id",
+    "cycle_id",
+    "url",
+    "submitted_by_me",
+    "tester_handle",
+    "source_completeness",
+    "original_source",
+    "normalized_fields",
+    "agent_analysis",
+    "inferred_lessons"
+  ],
+  "properties": {
+    "issue_id": {
+      "type": "string"
+    },
+    "cycle_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "submitted_by_me": {
+      "type": "boolean"
+    },
+    "tester_handle": {
+      "type": "string"
+    },
+    "source_completeness": {
+      "type": "string",
+      "enum": [
+        "full_detail",
+        "full_detail_with_unlinked_platform_id",
+        "step_linked_summary",
+        "list_level_summary",
+        "secondary_community_reference"
+      ]
+    },
+    "original_source": {
+      "type": "object",
+      "required": [
+        "title",
+        "product_or_site",
+        "component_or_area",
+        "bug_type",
+        "severity",
+        "review_outcome"
+      ]
+    },
+    "normalized_fields": {
+      "type": "object",
+      "required": [
+        "defect_category",
+        "pattern_ids",
+        "outcome_class",
+        "Historical_vs_Current_Duplicate_Role"
+      ]
+    },
+    "agent_analysis": {
+      "type": "object"
+    },
+    "inferred_lessons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

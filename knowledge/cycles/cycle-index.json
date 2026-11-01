@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-01T17:20:00+07:00",
+  "account_handle": "Mai Lê (uTest Academy / Rated Track)",
+  "access_audit_note": "Extracted from verified uTest screenshots, console logs, cycle overviews, and local repository records captured between 2026-10-12 and 2026-11-01. Where a live authenticated browser DOM was not open during batch indexing, records explicitly distinguish full_detail vs list_level_summary.",
+  "test_cases_summary": [
+    {
+      "test_case_id": "12353130",
+      "title": "Academy - Introduction Test Case - 2026",
+      "build": "1",
+      "environment": "Xiaomi 13 Pro - Android 14, Wi-Fi, Chrome",
+      "messages_count": 1,
+      "result": "Completed",
+      "approval_status": "Approved",
+      "payout": "VND 0.00",
+      "linked_cycle_id": "academy-intro-2026",
+      "evidence_source": "platform.utest.com/testcases screenshot (2026-11-01)"
+    },
+    {
+      "test_case_id": "12382341",
+      "title": "Academy - Computer Test Case - 2026",
+      "build": "2",
+      "environment": "Windows 11 Home - Chrome",
+      "messages_count": 0,
+      "result": "Completed",
+      "approval_status": "Approved",
+      "payout": "VND 0.00",
+      "linked_cycle_id": "academy-computer-2026",
+      "evidence_source": "platform.utest.com/testcases screenshot (2026-11-01)"
+    },
+    {
+      "test_case_id": "12406429",
+      "title": "Academy - Mobile Test Case - 2026",
+      "build": "3",
+      "environment": "Xiaomi 13 Pro - Android 14, Wi-Fi - Native (No mobile browser)",
+      "messages_count": 0,
+      "result": "Completed",
+      "approval_status": "Approved",
+      "payout": "VND 0.00",
+      "linked_cycle_id": "562000",
+      "evidence_source": "platform.utest.com/testcases screenshot (2026-11-01) + guidelines/mobile_testing_guide.md"
+    },
+    {
+      "test_case_id": "12428334",
+      "title": "Academy - Charles Proxy Test Case - 2026",
+      "build": "4",
+      "environment": "Windows 11 Home - Chrome",
+      "messages_count": 2,
+      "result": "Completed",
+      "approval_status": "Approved",
+      "payout": "VND 0.00",
+      "linked_cycle_id": "academy-charles-proxy-2026",
+      "evidence_source": "platform.utest.com/testcases screenshot (2026-11-01)"
+    },
+    {
+      "test_case_id": "12439394",
+      "title": "Academy - Challenge 1 Test Case - 2026",
+      "build": "5",
+      "environment": "Windows 11 Home - Chrome",
+      "messages_count": 3,
+      "result": "Failed",
+      "result_explanation": "Step 4 marked Failed and linked to Issue #7296862 (Unable to change account password); overall test case Approved.",
+      "approval_status": "Approved",
+      "payout": "VND 0.00",
+      "linked_cycle_id": "562706",
+      "evidence_source": "platform.utest.com/testcases screenshot (2026-11-01) + TC #12439394 screenshots (2026-10-27)"
+    }
+  ],
+  "cycles": [
+    {
+      "cycle_id": "562706",
+      "cycle_name": "uTest Academy - Challenge (Build 5: OneTravel)",
+      "client_or_product": "OneTravel (https://www.onetravel.com/)",
+      "cycle_type": "Exploratory with Test Cases (Academy Challenge - Practice Cycle 5 of 6)",
+      "status": "Locked / Completed",
+      "dates_observed": "2026-10-26 to 2026-11-01",
+      "environments_used": [
+        "Windows 11 Home - Chrome"
+      ],
+      "linked_test_case_id": "12439394",
+      "mai_scorecard": {
+        "rank": 1,
+        "role_label": "Current leader",
+        "total_reported": 3,
+        "total_approved": 3,
+        "wont_fix": 0,
+        "somewhat_valuable": 2,
+        "very_valuable": 1,
+        "exceptional_value": 0,
+        "rejected": 0,
+        "messages": 4,
+        "time_to_first_bug": "6 hours",
+        "points": 4.0
+      },
+      "total_issues_indexed": 24,
+      "full_detail_issues_count": 4,
+      "list_level_issues_count": 19,
+      "folder_path": "knowledge/cycles/562706"
+    },
+    {
+      "cycle_id": "562000",
+      "cycle_name": "Academy - Mobile Test Case - 2026 (Build 3: Genius Android App)",
+      "client_or_product": "Genius: Song Lyrics Finder (Android Native App)",
+      "cycle_type": "Exploratory with Test Cases (Academy Practice Cycle 3 of 6)",
+      "status": "Closed / Approved",
+      "dates_observed": "2026-10-20 to 2026-10-23",
+      "environments_used": [
+        "Xiaomi 13 Pro - Android 14, Wi-Fi - Native (No mobile browser)"
+      ],
+      "linked_test_case_id": "12406429",
+      "total_issues_indexed": 2,
+      "full_detail_issues_count": 2,
+      "list_level_issues_count": 0,
+      "folder_path": "knowledge/cycles/562000"
+    },
+    {
+      "cycle_id": "562001",
+      "cycle_name": "Academy - Challenge 1 (Celine Web en-vn)",
+      "client_or_product": "Celine (https://www.celine.com/en-vn/)",
+      "cycle_type": "Exploratory with Test Cases (Academy Challenge)",
+      "status": "Closed",
+      "dates_observed": "2026-10-24 to 2026-10-29",
+      "environments_used": [
+        "Windows 11 Home - Chrome"
+      ],
+      "linked_test_case_id": null,
+      "total_issues_indexed": 1,
+      "full_detail_issues_count": 1,
+      "list_level_issues_count": 0,
+      "folder_path": "knowledge/cycles/562001"
+    },
+    {
+      "cycle_id": "academy-practice-2026",
+      "cycle_name": "Academy Practice Cycles (Builds 1, 2, 4: Intro, Computer, Charles Proxy & MAC Cosmetics)",
+      "client_or_product": "MAC Cosmetics (https://www.maccosmetics.com/) & uTest Academy Practice Targets",
+      "cycle_type": "Academy Certification Practice Cycles (Builds 1, 2, 4)",
+      "status": "Closed / Approved",
+      "dates_observed": "2026-10-12 to 2026-10-26",
+      "environments_used": [
+        "Xiaomi 13 Pro - Android 14, Wi-Fi, Chrome",
+        "Windows 11 Home - Chrome"
+      ],
+      "linked_test_case_ids": [
+        "12353130",
+        "12382341",
+        "12428334"
+      ],
+      "total_issues_indexed": 1,
+      "full_detail_issues_count": 1,
+      "list_level_issues_count": 0,
+      "folder_path": "knowledge/cycles/academy-practice-2026"
+    }
+  ]
+}

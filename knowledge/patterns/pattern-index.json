@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-01T17:20:00+07:00",
+  "total_patterns": 10,
+  "patterns": [
+    {
+      "pattern_id": "PAT-01",
+      "name": "Filter / Detail Contradiction",
+      "category": "Search & Filtering",
+      "typical_value_tier": "Very Valuable to Somewhat Valuable",
+      "rejection_risk": "Low (when anchored on a concrete item's detail page)",
+      "verified_issue_ids": [
+        "7297173",
+        "7298627",
+        "7297698",
+        "7297946",
+        "7297678",
+        "PRACTICE-MAC-01"
+      ],
+      "file": "knowledge/patterns/PAT-01-filter-detail-contradiction.md"
+    },
+    {
+      "pattern_id": "PAT-02",
+      "name": "Price, Discount & Fare Breakdown Mismatch",
+      "category": "Pricing & Checkout",
+      "typical_value_tier": "Very Valuable to Somewhat Valuable",
+      "rejection_risk": "Low (if arithmetic or card-level promo terms are proven)",
+      "verified_issue_ids": [
+        "7297646",
+        "562706-MAI-BUG-2",
+        "7297934",
+        "7297678",
+        "PRACTICE-MAC-01"
+      ],
+      "file": "knowledge/patterns/PAT-02-price-discount-breakdown-mismatch.md"
+    },
+    {
+      "pattern_id": "PAT-03",
+      "name": "Reversible State Mutation & Cross-Step State Loss",
+      "category": "State Management",
+      "typical_value_tier": "Very Valuable to Somewhat Valuable",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "7297646",
+        "7297158",
+        "7297669",
+        "7297771",
+        "EXT-TT-1941791"
+      ],
+      "file": "knowledge/patterns/PAT-03-reversible-state-and-cross-step-loss.md"
+    },
+    {
+      "pattern_id": "PAT-04",
+      "name": "Refresh, Back/Forward & Session Persistence Drift",
+      "category": "State Persistence",
+      "typical_value_tier": "Somewhat Valuable",
+      "rejection_risk": "Low to Medium (must verify guest-cart merge WAD first)",
+      "verified_issue_ids": [
+        "7297127",
+        "7297626",
+        "EXT-TT-2072602"
+      ],
+      "file": "knowledge/patterns/PAT-04-refresh-and-session-persistence.md"
+    },
+    {
+      "pattern_id": "PAT-05",
+      "name": "Unrecoverable Empty State & Sticky Reset Failure",
+      "category": "Search & Form Recovery",
+      "typical_value_tier": "Somewhat Valuable",
+      "rejection_risk": "Medium (only valid if user cannot clear/reset; check WAD on Clear All)",
+      "verified_issue_ids": [
+        "7297698",
+        "EXT-TT-2085731",
+        "7296911"
+      ],
+      "file": "knowledge/patterns/PAT-05-unrecoverable-empty-state-and-reset.md"
+    },
+    {
+      "pattern_id": "PAT-06",
+      "name": "High-Signal Visual & Localization Defects (vs. WNF/OOS Traps)",
+      "category": "Visual & Localization",
+      "typical_value_tier": "Somewhat Valuable (Low Severity) or Won't Fix",
+      "rejection_risk": "Medium to High (must pass OOS minor-visual filter)",
+      "verified_issue_ids": [
+        "7290242",
+        "7297688",
+        "7297794",
+        "7292278",
+        "7297868",
+        "7297550"
+      ],
+      "file": "knowledge/patterns/PAT-06-visual-and-localization-boundaries.md"
+    },
+    {
+      "pattern_id": "PAT-07",
+      "name": "Dependent Calendar & Date Picker Boundary Lockout",
+      "category": "Date / Time Controls",
+      "typical_value_tier": "Somewhat Valuable",
+      "rejection_risk": "Low (when parent-child date dependency locks all cells)",
+      "verified_issue_ids": [
+        "562706-MAI-BUG-3",
+        "7297277"
+      ],
+      "file": "knowledge/patterns/PAT-07-calendar-and-date-picker-lockout.md"
+    },
+    {
+      "pattern_id": "PAT-08",
+      "name": "Internal Navigation Redirect & Dead Control Audit",
+      "category": "Navigation & Links",
+      "typical_value_tier": "Somewhat Valuable (or Won't Fix on auxiliary footer links)",
+      "rejection_risk": "Low (inside In-Scope navigation)",
+      "verified_issue_ids": [
+        "7297096",
+        "7297917"
+      ],
+      "file": "knowledge/patterns/PAT-08-navigation-redirect-and-dead-links.md"
+    },
+    {
+      "pattern_id": "PAT-09",
+      "name": "Native App vs. Mobile Web Parity & Infinite Spinner",
+      "category": "Cross-Platform / Network",
+      "typical_value_tier": "Somewhat Valuable to Very Valuable",
+      "rejection_risk": "Low (when mobile web on same device/network succeeds)",
+      "verified_issue_ids": [
+        "7290340",
+        "7297180"
+      ],
+      "file": "knowledge/patterns/PAT-09-app-web-parity-and-infinite-spinner.md"
+    },
+    {
+      "pattern_id": "PAT-10",
+      "name": "Account Lifecycle & Structured Test Case Step Failures",
+      "category": "Account / Auth / Structured TC",
+      "typical_value_tier": "Approved TC + Structured Bug",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "7296862"
+      ],
+      "file": "knowledge/patterns/PAT-10-account-lifecycle-and-structured-tc.md"
+    }
+  ]
+}
