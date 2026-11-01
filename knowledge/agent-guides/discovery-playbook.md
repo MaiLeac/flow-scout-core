@@ -17,3 +17,9 @@
    - **Wave 3 (Minutes 30+ — Low-Hanging Valid Bugs When Permitted by Scope):**
      - `PAT-08` (**Internal Service Link Wrong Redirect**): Check links on `Service Fees` / `Terms` pages (`#7297096`).
      - `PAT-06` (**Broken Homepage Images / Mixed Locale Dates**): Check for `naturalWidth === 0` broken images on primary cards (`#7297688`) and OS-locale date leaks on English pages (`#7297794`).
+    - **Wave 4 (Boundary, Session & Input Formatting Probes — Tested from Approved Crowdtesting Archives):**
+      - PAT-11 (**Masked Input & Caret Snapping**): On checkout phone/credit card inputs, place cursor in the middle and press Backspace or enter a digit. Check if cursor snaps to end or mutates trailing digits (EXT-TT-1976079, EXT-TT-1976776).
+      - PAT-12 (**Cart Upper Boundary & Quantity Shock**): Rapidly add 20–40 distinct items or update item quantity to high boundary (99), then proceed to checkout. Watch for cart wiping or unhandled 500 exceptions (EXT-TT-2016865, EXT-TT-105559).
+      - PAT-13 (**Session State & Multi-Account Isolation**): Log into Account A -> add item to cart -> logout -> log into Account B -> check if Account A's items persist in Account B (EXT-TT-2072602, EXT-TT-1941666).
+      - PAT-14 (**Cross-Entity Query & Review Leakage**): Filter reviews on Product A, click through to Product B, and check if Product A's filter/search string is improperly applied to Product B (EXT-TT-1941791, EXT-TT-1941819).
+      - PAT-15 (**Geographic & Fulfillment Bypass**): Select a product explicitly restricted to domestic delivery (e.g. Canada only), enter an international address at checkout, and check if the order flow bypasses the geographic restriction without blocking (EXT-TT-1976172).

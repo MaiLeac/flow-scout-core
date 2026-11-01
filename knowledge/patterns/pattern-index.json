@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-01T17:20:00+07:00",
-  "total_patterns": 10,
+  "updated_at": "2026-11-01T18:30:00+07:00",
+  "total_patterns": 15,
   "patterns": [
     {
       "pattern_id": "PAT-01",
@@ -137,6 +137,72 @@
         "7296862"
       ],
       "file": "knowledge/patterns/PAT-10-account-lifecycle-and-structured-tc.md"
+    },
+    {
+      "pattern_id": "PAT-11",
+      "name": "Masked Input & Formatted Cursor Snap",
+      "category": "Input & Form Formatting",
+      "typical_value_tier": "Somewhat Valuable (Approved Functional)",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "EXT-TT-1976079",
+        "EXT-TT-1976776",
+        "EXT-TT-943362"
+      ],
+      "file": "knowledge/patterns/PAT-11-masked-input-and-cursor-jumps.md"
+    },
+    {
+      "pattern_id": "PAT-12",
+      "name": "Cart Overflow & Upper Boundary Limits",
+      "category": "Cart & Checkout Boundary",
+      "typical_value_tier": "Very Valuable (Approved Functional)",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "EXT-TT-2016865",
+        "EXT-TT-105559",
+        "EXT-TT-882522",
+        "EXT-TT-1987488"
+      ],
+      "file": "knowledge/patterns/PAT-12-cart-overflow-and-boundary-limits.md"
+    },
+    {
+      "pattern_id": "PAT-13",
+      "name": "Session State & Multi-Account Data Leakage",
+      "category": "Session & Authentication",
+      "typical_value_tier": "Very Valuable (High Severity Functional)",
+      "rejection_risk": "Low (when proven across 2 separate test accounts)",
+      "verified_issue_ids": [
+        "EXT-TT-2072602",
+        "EXT-TT-1941666",
+        "EXT-TT-2085902"
+      ],
+      "file": "knowledge/patterns/PAT-13-session-state-and-multi-account-leakage.md"
+    },
+    {
+      "pattern_id": "PAT-14",
+      "name": "Cross-Entity Query & Rating State Leakage",
+      "category": "Client Router & SPA State",
+      "typical_value_tier": "Somewhat Valuable (Approved Functional)",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "EXT-TT-1941791",
+        "EXT-TT-1941819",
+        "EXT-TT-2085481"
+      ],
+      "file": "knowledge/patterns/PAT-14-query-and-filter-leakage-across-entities.md"
+    },
+    {
+      "pattern_id": "PAT-15",
+      "name": "Geographic & Checkout Rule Bypass",
+      "category": "Checkout & Validation Policy",
+      "typical_value_tier": "Very Valuable (High Severity Policy Flaw)",
+      "rejection_risk": "Low",
+      "verified_issue_ids": [
+        "EXT-TT-1976172",
+        "EXT-TT-2017496",
+        "EXT-TT-1976054"
+      ],
+      "file": "knowledge/patterns/PAT-15-geographic-and-checkout-rule-bypass.md"
     }
   ]
 }

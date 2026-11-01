@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-01T17:20:00+07:00",
+  "updated_at": "2026-11-01T18:30:00+07:00",
   "account_handle": "Mai Lê (uTest Academy / Rated Track)",
   "access_audit_note": "Extracted from verified uTest screenshots, console logs, cycle overviews, and local repository records captured between 2026-10-12 and 2026-11-01. Where a live authenticated browser DOM was not open during batch indexing, records explicitly distinguish full_detail vs list_level_summary.",
   "test_cases_summary": [
@@ -149,6 +149,16 @@
       "full_detail_issues_count": 1,
       "list_level_issues_count": 0,
       "folder_path": "knowledge/cycles/academy-practice-2026"
+    },
+    {
+      "cycle_id": "external-testertudo",
+      "name": "TesterTudo Approved Crowdtesting Archive (Test IO & uTest)",
+      "source": "https://testertudo.com/bug-list/",
+      "total_issues": 91,
+      "directory": "knowledge/cycles/external-testertudo",
+      "notes": "Secondary reference collection of 90+ approved crowdtesting bug reports.",
+      "folder_path": "knowledge/cycles/external-testertudo",
+      "total_issues_indexed": 91
     }
   ]
 }

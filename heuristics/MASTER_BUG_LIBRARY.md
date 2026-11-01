@@ -102,7 +102,51 @@ Cập nhật: 2026-10-29. Mục đích: chọn vài phép thử phù hợp với
 
 ## Lead chưa đủ bằng chứng
 
-- Bảng T1 nêu ví dụ con trỏ nhảy khi xoá số điện thoại, dropdown biến mất khi cuộn, sai thứ tự giá, trường hồ sơ không được điền sau xác nhận email. Chưa đọc bài chi tiết của các mục đó, nên chỉ là gợi ý nghiên cứu sau.
+- Bảng tổng hợp TesterTudo có một số trường hợp visual nhỏ (như khoảng trống bất thường giữa hai bài báo) có thể bị phân loại là editorial layout hoặc WAD tùy theo quy tắc cycle.
+
+## H-10 — Con trỏ nhảy và lỗi mask định dạng (Input Mask & Caret Snap)
+
+- **Cơ chế:** trường nhập liệu có format mask tự động (như số thẻ tín dụng `XXXX XXXX XXXX XXXX`, số điện thoại `(XXX) XXX-XXXX`) bị lỗi re-render: mỗi khi người dùng đặt con trỏ ở giữa chuỗi để sửa/xoá, hàm định dạng tự dồn con trỏ về cuối trường nhập liệu hoặc làm sai lệch các chữ số phía sau.
+- **Điều kiện:** form nhập thông tin thanh toán, địa chỉ giao hàng, số điện thoại, ngày sinh.
+- **Thử:** nhập đầy đủ một dãy số hợp lệ; dùng chuột hoặc phím mũi tên đặt con trỏ vào giữa dãy số (vị trí ký tự thứ 4 hoặc 5); nhấn `Backspace` hoặc gõ thêm 1 chữ số.
+- **Kỳ vọng có căn cứ:** con trỏ phải giữ đúng vị trí đang chỉnh sửa; ký tự trước con trỏ bị xoá hoặc ký tự mới được chèn vào đúng vị trí.
+- **Tín hiệu:** con trỏ nhảy ngay lập tức về cuối chuỗi; hoặc các chữ số phía sau bị biến đổi bất thường.
+- **Dương tính giả:** trường nhập liệu plain text không dùng mask; thiết bị có auto-correct/IME riêng can thiệp.
+- **Kiểm tra rẻ nhất:** thử trên desktop Chrome với bàn phím chuẩn; quan sát vị trí con trỏ sau đúng 1 phím Backspace.
+- **Nguồn:** TesterTudo #1976079, #1976776, #943362. **Tin cậy: cao** (các bug Functional đã được duyệt trên uTest/Test IO).
+
+## H-11 — Giới hạn biên giỏ hàng và danh sách so sánh (Cart Overflow & Upper Boundary)
+
+- **Cơ chế:** hệ thống quản lý giỏ hàng/phiên làm việc bị crash, tràn bộ nhớ client state hoặc lỗi microservice khi số lượng sản phẩm vượt ngưỡng bình thường (ví dụ > 40 sản phẩm) hoặc khi thay đổi số lượng lớn ở bước thanh toán.
+- **Điều kiện:** trang thương mại điện tử cho phép thêm nhiều sản phẩm hoặc chỉnh sửa số lượng trong giỏ.
+- **Thử:** thêm liên tục nhiều sản phẩm (20, 30, 45 sản phẩm); hoặc thay đổi số lượng từ 1 lên 99 rồi nhấn ngay nút Proceed to Checkout.
+- **Kỳ vọng có căn cứ:** hệ thống phải hiển thị thông báo giới hạn rõ ràng nếu có trần tối đa; không được xóa sạch giỏ hàng hoặc quăng unhandled exception màn hình trắng.
+- **Tín hiệu:** toàn bộ sản phẩm trong giỏ biến mất (`cart items disappeared`); hoặc hiển thị thông báo lỗi hệ thống 'Something went wrong'.
+- **Dương tính giả:** tồn kho hết; sản phẩm bị gỡ khỏi catalogue; hệ thống cố ý giới hạn có kèm thông báo lỗi rõ ràng.
+- **Kiểm tra rẻ nhất:** thêm sản phẩm có sẵn hàng; kiểm tra giỏ sau mỗi mốc 10 sản phẩm; chụp network tab nếu có lỗi 500.
+- **Nguồn:** TesterTudo #2016865, #105559, #882522, #1987488. **Tin cậy: cao.**
+
+## H-12 — Rò rỉ tìm kiếm/đánh giá giữa các đối tượng khác nhau (Cross-Entity State Leakage)
+
+- **Cơ chế:** ứng dụng đơn trang (SPA) không dọn dẹp state bộ lọc cục bộ khi người dùng chuyển hướng giữa các sản phẩm hoặc danh mục có liên quan.
+- **Điều kiện:** trang chi tiết sản phẩm (PDP) có tính năng tìm kiếm trong review hoặc bộ lọc đánh giá sao; có link sang sản phẩm khác.
+- **Thử:** ở sản phẩm A, áp dụng bộ lọc đánh giá (ví dụ lọc 5 sao, hoặc tìm từ khóa 'size'); bấm vào sản phẩm B được gợi ý ở dưới; quan sát khu vực review của sản phẩm B.
+- **Kỳ vọng có căn cứ:** sản phẩm B phải hiển thị toàn bộ đánh giá mặc định của nó; không được tự động áp bộ lọc hoặc từ khóa của sản phẩm A.
+- **Tín hiệu:** sản phẩm B chỉ hiện 1/85 review vì bị dính từ khóa của sản phẩm A mà không có thanh gỡ bỏ; hoặc bộ lọc size của danh mục trước vẫn áp lên danh mục sau.
+- **Dương tính giả:** bộ lọc toàn cục (global store filter) được thiết kế có chủ ý trên toàn site và có chip hiển thị rõ ràng cho phép người dùng xoá.
+- **Kiểm tra rẻ nhất:** kiểm tra xem có chip bộ lọc để tắt hay không; nếu UI không cho tắt nhưng số lượng review bị rút ngắn bất thường thì đó là state leakage.
+- **Nguồn:** TesterTudo #1941791, #1941819, #2085481. **Tin cậy: cao.**
+
+## H-13 — Vượt rào quy tắc giao hàng địa lý và validation form (Geographic & Rule Bypass)
+
+- **Cơ chế:** quy tắc nghiệp vụ hạn chế địa lý hoặc định dạng trường form chỉ được kiểm tra hời hợt hoặc bị bỏ lọt ở khâu checkout/submit.
+- **Điều kiện:** sản phẩm có ràng buộc giao hàng nội địa (như 'Ships to Canada only'); form đăng ký có yêu cầu định dạng mật khẩu/email.
+- **Thử:** chọn sản phẩm bị giới hạn vùng giao hàng; ở bước checkout nhập địa chỉ nước ngoài; hoặc nhập email không đúng định dạng chuẩn ở form quên mật khẩu.
+- **Kỳ vọng có căn cứ:** hệ thống phải chặn lại ở bước tính phí ship/xem lại đơn hàng và báo lỗi rõ ràng; không cho phép hoàn tất đơn hàng với địa chỉ không thể giao.
+- **Tín hiệu:** hệ thống cho phép đặt hàng thành công sang quốc gia ngoài vùng hỗ trợ; hoặc form thông báo đã gửi link reset cho email không hợp lệ.
+- **Dương tính giả:** chính sách giao hàng quốc tế qua bên thứ ba (cross-border forwarding) được hỗ trợ ngầm; email được xử lý backend async.
+- **Kiểm tra rẻ nhất:** đối chiếu trực tiếp mô tả sản phẩm ('shipped within Canada only') với danh sách quốc gia cho phép chọn ở checkout.
+- **Nguồn:** TesterTudo #1976172, #2017496, #1976054. **Tin cậy: cao.**
 
 ## H-08 — Bộ lọc tự biến mất khi kết quả rỗng
 

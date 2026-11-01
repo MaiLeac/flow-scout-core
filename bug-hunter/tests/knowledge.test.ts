@@ -52,7 +52,7 @@ test('knowledge/ indexes, schemas, and referenced files are complete and valid',
   }
 
   const issueIndex = JSON.parse(await readFile(path.join(repoRoot, 'knowledge', 'issues', 'issue-index.json'), 'utf8'));
-  assert.ok(issueIndex.issues.length >= 23);
+  assert.ok(issueIndex.issues.length >= 110, 'Should contain all 28 uTest + 91 external TesterTudo issues');
   for (const issue of issueIndex.issues) {
     assert.ok(issue.issue_id, 'issue_id required');
     assert.ok(issue.cycle_id, 'cycle_id required');
@@ -63,7 +63,7 @@ test('knowledge/ indexes, schemas, and referenced files are complete and valid',
   }
 
   const patternIndex = JSON.parse(await readFile(path.join(repoRoot, 'knowledge', 'patterns', 'pattern-index.json'), 'utf8'));
-  assert.equal(patternIndex.patterns.length, 10);
+  assert.ok(patternIndex.patterns.length >= 15, 'Should contain at least 15 patterns including PAT-11 to PAT-15');
   for (const pat of patternIndex.patterns) {
     await access(path.join(repoRoot, pat.file));
   }
