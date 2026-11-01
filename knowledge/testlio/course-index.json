@@ -52,7 +52,7 @@
       "name": "Localization Testing Course",
       "description": "Adapt software for global markets through localization testing, improving user experience.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/07df8084-3cce-499d-ba6c-c647a48ae63e/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "a07ccae5-95a2-11ed-8d56-12df8409b7af",
@@ -68,7 +68,7 @@
       "name": "An Introduction to Accessibility Testing",
       "description": "Learn how to test software for accessibility compliance and create inclusive experiences for users with disabilities.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/9170b3c6-c248-4345-be7b-6b5318413fb9/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "89a45af6-cc12-11ee-999d-0ab48a92cb33",
@@ -76,7 +76,7 @@
       "name": "Usability 101",
       "description": "Gain the foundational knowledge of User Experience (UX) and Usability Testing.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/e39caa9d-33a1-4b0d-a2cb-08d7f7b58e53/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "8d36ec42-cc12-11ee-999d-0ab48a92cb33",
@@ -84,7 +84,7 @@
       "name": "Usability 102",
       "description": "Learn about becoming a participant in Testlio usability tests.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/148d508c-5c92-40c8-83bb-e9c045fa0772/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "5c5a721c-db08-11ee-8dec-0ab48a92cb33",
@@ -100,7 +100,7 @@
       "name": "Tester Conduct Guidelines",
       "description": "Deepen your expertise with specialized guidelines for testers' professional conduct necessary for success on the Testlio platform.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/5c480415-5e4d-4658-8ec6-7a54d53f355d/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "a5414816-379c-4124-97fd-a5fc1e927477",
@@ -108,7 +108,7 @@
       "name": "Local Runs and Result Services Training",
       "description": "Learn how to set up and utilize Testlio command line interface (CLI) for local runs and uploading results to Testlio platform.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/8bed854b-1878-4683-a444-79c8d5032af1/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "e0d34dcf-4bc8-4f59-aae7-3b20887abec6",
@@ -116,7 +116,7 @@
       "name": "Accessibility Test Techniques",
       "description": "Practical guidance on how to use the tools for validating accessibility issues for users.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/1ece9c42-a712-4c45-b568-061132817e67/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "a28705e2-9dae-11ef-8dec-0ab48a92cb33",
@@ -164,7 +164,7 @@
       "name": "Executing Structured Exploratory Tests",
       "description": "Learn how to plan and run focused structured exploratory testing.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/2c3671da-1c0e-418c-b314-2ebf8fc82511/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "617597d5-761e-11f1-a9a9-0affccbd3861",
@@ -172,7 +172,7 @@
       "name": "Executing Exploratory Tests",
       "description": "Learn what exploratory testing is and how to plan and run focused exploratory testing.",
       "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/ea899da2-f049-469b-bc45-f44ed77da944/",
-      "isLatestAttemptPassed": false
+      "isLatestAttemptPassed": true
     },
     {
       "guid": "6175982a-761e-11f1-a9a9-0affccbd3861",

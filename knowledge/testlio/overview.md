@@ -18,3 +18,16 @@ Hệ thống này giúp agent tự động hóa việc đối chiếu quy tắc,
   - `prep_functional_regression_testing`: Cách vượt qua kỳ thi chứng chỉ Functional Regression Testing.
   - `issue_reporting`: Quy chuẩn viết tiêu đề, các bước và đính kèm video/log.
   - `executing_structured_exploratory_tests`: Kỹ năng test thăm dò theo charter.
+
+
+### 3. Đội thiết bị hoạt động (Device Fleet)
+- **Windows PC**: Windows 11 Home — **Status: Active & Verified (`isVerified: true`)**
+- **Xiaomi 13 Pro**: Android 15 — Added (`isVerifiable: true`)
+- **Redmi C53**: Android 15 — Fleet ready
+
+### 4. Thành tích Testlio Academy
+- **17 Khóa học / Chứng chỉ chính thức**: Đạt 100% Passed.
+- **Onboarding Checklist (Get ready to receive work opportunities)**: **100% Complete (5/5 mục hoàn tất)**.
+- **Tiến trình Career Path**:
+  - Manual Tester: 71% (5/7 bước hoàn thành; sẵn sàng mở khóa Pre-certification Quiz & FRTC).
+  - Test Lead: 50% (bước 1 hoàn thành).
