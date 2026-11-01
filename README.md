@@ -15,9 +15,14 @@ Hệ thống tri thức kiểm thử thực chứng (`knowledge/`), cẩm nang q
   - [`knowledge/agent-guides/`](knowledge/agent-guides/discovery-playbook.md): Bộ 4 Playbook thực chiến cho Agent (`discovery-playbook.md`, `triage-playbook.md`, `issue-writing-playbook.md`, `duplicate-check-playbook.md`).
 - [`guidelines/`](guidelines/):
   - [`utest_academy_handbook.md`](guidelines/utest_academy_handbook.md): Sổ tay thực hành chi tiết 38 chương đối chiếu từ uTest Academy.
+  - [`testlio_handbook.md`](guidelines/testlio_handbook.md): Cẩm nang nền tảng Testlio, xác minh thiết bị (Desktop auto-verify & Mobile QR), cấu trúc bug report và luyện thi chứng chỉ FRTC.
   - [`mobile_testing_guide.md`](guidelines/mobile_testing_guide.md): Hướng dẫn kiểm thử ứng dụng di động & thu thập log bằng `adb logcat`.
   - [`crowdtesting_hunter_guide.md`](guidelines/crowdtesting_hunter_guide.md): Nguyên tắc khám phá nhanh và bàn giao kết quả.
   - [`test_io_handbook.md`](guidelines/test_io_handbook.md), [`test_io_cheatsheet.md`](guidelines/test_io_cheatsheet.md), [`tester_work_handbook.md`](guidelines/tester_work_handbook.md): Sổ tay quy chuẩn cho Test IO và Tester Work.
+- [`knowledge/testlio/`](knowledge/testlio/overview.md):
+  - [`course-index.json`](knowledge/testlio/course-index.json): Chỉ mục toàn bộ 22 khóa học & bài thi chứng chỉ chính thức của Testlio Academy qua GraphQL API.
+  - [`certification-prep.md`](knowledge/testlio/certification-prep.md): Bộ câu hỏi, đáp án và chiến lược đạt chứng chỉ **Functional Regression Testing Certification (FRTC)** và **Testlio Platform Course**.
+  - [`source-links.md`](knowledge/testlio/source-links.md): Danh bạ liên kết trực tiếp tới các khóa học trên Easygenerator LMS và cổng dịch vụ Testlio.
 - [`heuristics/`](heuristics/):
   - [`BUG_LESSONS.md`](heuristics/BUG_LESSONS.md): Các bài học rút ra từ thực tế duyệt/từ chối bug.
   - [`MASTER_BUG_LIBRARY.md`](heuristics/MASTER_BUG_LIBRARY.md): Thư viện 10 phép thử lỗi chức năng có tỷ lệ duyệt cao.

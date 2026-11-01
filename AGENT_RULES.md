@@ -7,7 +7,10 @@ Mục tiêu: tìm **bug thật, trong scope, chưa trùng**, và giao lại bằ
 Trước khi khám phá, sàng lọc hoặc viết báo cáo, agent phải tra cứu hệ thống [`knowledge/`](knowledge/README.md) theo thứ tự ưu tiên tuyệt đối sau:
 
 1. **Quy định của Cycle hiện tại:** `Overview`, `Announcements`, `Issue Reporting Instructions`, `Slot / Test Case Instructions`, `Known Issues` và chỉ dẫn trực tiếp của `TTL / TE` trong Cycle Chat hoặc Info Request.
-2. **uTest Academy chính thức:** Các khóa học tại `https://www.utest.com/academy` (chỉ mục tại [`knowledge/academy/course-index.json`](knowledge/academy/course-index.json), [`knowledge/academy/source-links.md`](knowledge/academy/source-links.md) và [`guidelines/utest_academy_handbook.md`](guidelines/utest_academy_handbook.md)).
+2. **Quy chuẩn nền tảng chính thức:**
+   - **uTest Academy:** Các khóa học tại `https://www.utest.com/academy` ([`knowledge/academy/course-index.json`](knowledge/academy/course-index.json) & [`guidelines/utest_academy_handbook.md`](guidelines/utest_academy_handbook.md)).
+   - **Testlio Platform & Academy:** Quy chuẩn làm việc theo giờ, xác minh thiết bị, chuẩn báo cáo bug và đề cương chứng chỉ FRTC ([`guidelines/testlio_handbook.md`](guidelines/testlio_handbook.md) & [`knowledge/testlio/overview.md`](knowledge/testlio/overview.md)).
+   - **Test IO & Tester Work:** [`guidelines/test_io_handbook.md`](guidelines/test_io_handbook.md) và [`guidelines/tester_work_handbook.md`](guidelines/tester_work_handbook.md).
 3. **Bằng chứng thực tế từ các Cycle & Issue lịch sử:** [`knowledge/cycles/cycle-index.json`](knowledge/cycles/cycle-index.json) và [`knowledge/issues/issue-index.json`](knowledge/issues/issue-index.json).
 4. **Playbook & Thư viện mẫu lỗi của Repo:**
    - [`knowledge/agent-guides/discovery-playbook.md`](knowledge/agent-guides/discovery-playbook.md)

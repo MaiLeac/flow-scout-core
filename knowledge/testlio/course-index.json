@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-02T01:15:00+07:00",
+  "platform": "Testlio",
+  "platform_url": "https://freelancer.testlio.com/",
+  "total_courses": 22,
+  "certification_goal": "functional_regression_testing (FRTC)",
+  "courses": [
+    {
+      "guid": "c27a3cc9-2a2a-4c2c-9a0f-bbbeebe33758",
+      "code": "functional_regression_testing",
+      "name": "Functional Regression Testing",
+      "description": "Complete the test to validate your regression testing skills and get certified.",
+      "providerCourseUrl": "https://freelancer.testlio.com/academy/frtc",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "2b3c60b8-9599-11ed-8d56-12df8409b7af",
+      "code": "testlio_platform_course",
+      "name": "Testlio Platform Course",
+      "description": "Learn to navigate and utilize Testlio to enhance your software testing efficiency.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/af244b50-5b09-459b-9715-8deb89227303/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "cfc89710-959f-11ed-8d56-12df8409b7af",
+      "code": "prep_functional_regression_testing",
+      "name": "How to earn the Functional Regression Testing Certification?",
+      "description": "Gain the expertise needed to ace the exam and secure your certificate.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/d78f23c8-8e4f-4a1f-9c33-cc8bb2df7074/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "081ed056-95a0-11ed-8d56-12df8409b7af",
+      "code": "payment_testing",
+      "name": "Payments Testing Basics",
+      "description": "Cover testing payment systems, including their challenges and best practices for secure and reliable financial transactions.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/73fdc629-7461-4c4d-97f5-da81a03b3e1b/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "b624916c-95a0-11ed-8d56-12df8409b7af",
+      "code": "analytics_testing",
+      "name": "An Introduction to Analytics Testing",
+      "description": "Cover basic concepts and techniques of analytics testing, key tools, best practices, and troubleshooting tips to ensure accurate and reliable data insights.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/ba840fbb-98bd-474d-80e2-81526e97f82c/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "d9a03125-95a1-11ed-8d56-12df8409b7af",
+      "code": "localization_testing",
+      "name": "Localization Testing Course",
+      "description": "Adapt software for global markets through localization testing, improving user experience.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/07df8084-3cce-499d-ba6c-c647a48ae63e/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "a07ccae5-95a2-11ed-8d56-12df8409b7af",
+      "code": "issue_reporting",
+      "name": "Issue Reporting Course",
+      "description": "Learn strategies for reporting software issues to foster efficient communication between testers and developers, leading to prompt resolution.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/974fdfe5-72db-4187-9599-bd8150875cce/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "a8373e47-b81e-11ed-8d56-12df8409b7af",
+      "code": "accessibility_testing",
+      "name": "An Introduction to Accessibility Testing",
+      "description": "Learn how to test software for accessibility compliance and create inclusive experiences for users with disabilities.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/9170b3c6-c248-4345-be7b-6b5318413fb9/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "89a45af6-cc12-11ee-999d-0ab48a92cb33",
+      "code": "usability_101",
+      "name": "Usability 101",
+      "description": "Gain the foundational knowledge of User Experience (UX) and Usability Testing.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/e39caa9d-33a1-4b0d-a2cb-08d7f7b58e53/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "8d36ec42-cc12-11ee-999d-0ab48a92cb33",
+      "code": "usability_102",
+      "name": "Usability 102",
+      "description": "Learn about becoming a participant in Testlio usability tests.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/148d508c-5c92-40c8-83bb-e9c045fa0772/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "5c5a721c-db08-11ee-8dec-0ab48a92cb33",
+      "code": "freelancer_conduct_guidelines",
+      "name": "Freelancer Conduct Guidelines",
+      "description": "Learn essential principles of professional conduct in freelancing, fundamental for your success and reputation on the Testlio platform.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/c5eff27a-8918-4c5e-8776-f62f67ef10e5/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "5e49dca3-db08-11ee-8dec-0ab48a92cb33",
+      "code": "tester_conduct_guidelines",
+      "name": "Tester Conduct Guidelines",
+      "description": "Deepen your expertise with specialized guidelines for testers' professional conduct necessary for success on the Testlio platform.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/5c480415-5e4d-4658-8ec6-7a54d53f355d/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "a5414816-379c-4124-97fd-a5fc1e927477",
+      "code": "local_runs_and_result_services_training",
+      "name": "Local Runs and Result Services Training",
+      "description": "Learn how to set up and utilize Testlio command line interface (CLI) for local runs and uploading results to Testlio platform.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/8bed854b-1878-4683-a444-79c8d5032af1/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "e0d34dcf-4bc8-4f59-aae7-3b20887abec6",
+      "code": "accessibility_test_techniques",
+      "name": "Accessibility Test Techniques",
+      "description": "Practical guidance on how to use the tools for validating accessibility issues for users.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/1ece9c42-a712-4c45-b568-061132817e67/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "a28705e2-9dae-11ef-8dec-0ab48a92cb33",
+      "code": "spanish_mex_certification",
+      "name": "Spanish (Mex) Localization Testing Certification",
+      "description": "This certification is designed to asses the domain of the Spanish language as it is spoken and written in Mexico. Participants will be tested on several scenarios involving localized content, guided by style guidelines and a dedicated glossary to ensure consistency across all communications.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/78a50a6e-09b5-4575-8702-bb6288a25e29/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "aa72d4f1-4129-11f0-9ca8-0ab48a92cb33",
+      "code": "intro_to_testing_ai_powered_applications",
+      "name": "Intro to Testing AI-Powered Applications",
+      "description": "Learn how to test AI-powered applications across different input types.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/48cf7cc2-48e3-4f42-a26d-159a35b020cf/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "9af833c3-cb97-11f0-9ca8-0ab48a92cb33",
+      "code": "beginners_guide_to_ai",
+      "name": "Beginner's Guide to AI",
+      "description": "Gain a solid foundation for understanding the rapidly evolving field of AI.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/caebd673-0647-4e78-b317-21896af4ee22/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "cbb9712c-5821-11f1-9aeb-128f4e695f45",
+      "code": "freelancer_security_privacy_training",
+      "name": "Freelancer Security & Privacy Training",
+      "description": "Learn your responsibilities for security and privacy while working as a freelancer with Testlio.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/25efcedf-350a-4716-9d6a-67982395a4a5/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "cbb97401-5821-11f1-9aeb-128f4e695f45",
+      "code": "test_lead_security_privacy_add_on",
+      "name": "Test Lead Security & Privacy Add On",
+      "description": "A course on additional TL responsibilities around security and privacy.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/e21c10df-2b4e-44ea-9328-4787bd8f378f/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "6175953b-761e-11f1-a9a9-0affccbd3861",
+      "code": "executing_structured_exploratory_tests",
+      "name": "Executing Structured Exploratory Tests",
+      "description": "Learn how to plan and run focused structured exploratory testing.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/2c3671da-1c0e-418c-b314-2ebf8fc82511/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "617597d5-761e-11f1-a9a9-0affccbd3861",
+      "code": "executing_exploratory_tests",
+      "name": "Executing Exploratory Tests",
+      "description": "Learn what exploratory testing is and how to plan and run focused exploratory testing.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/ea899da2-f049-469b-bc45-f44ed77da944/",
+      "isLatestAttemptPassed": false
+    },
+    {
+      "guid": "6175982a-761e-11f1-a9a9-0affccbd3861",
+      "code": "test_creation",
+      "name": "Test Creation",
+      "description": "Learn how to create tests in the Testlio platform that are clear, executable, and easy to maintain.",
+      "providerCourseUrl": "https://auth.easygenerator.com/api/auth/oauth/testlio?callbackUrl=https://elearning.easygenerator.com/9c095763-abe2-443e-a2b3-bd41b7c462cb/",
+      "isLatestAttemptPassed": false
+    }
+  ]
+}
