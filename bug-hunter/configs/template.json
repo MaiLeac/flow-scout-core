@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "cycle": {
+    "id": "replace-cycle-id", "title": "Replace with actual cycle",
+    "overview": "Curate actual overview and test cases here. No test completeness claimed until all source steps are imported.",
+    "inScope": ["Replace with verified scope"], "outOfScope": ["Payment, purchase, messaging, destructive changes"],
+    "sources": [], "evidence": ["Read cycle requirements"],
+    "currentIssues": {"status": "not-checked", "items": []}
+  },
+  "browser": {"headless": true},
+  "scope": {"allowedOrigins": ["https://example.com"], "assetOrigins": [], "includePaths": ["^/"], "excludePatterns": []},
+  "safety": {
+    "allowedActionNames": ["^(Search|Filter|Apply filters|Clear filters|Show more|Next|Previous)$"],
+    "readOnlyPostRules": [],
+    "privateDataSelectors": ["input[type=password]", "input[type=email]", "input[type=tel]", "[autocomplete^=cc-]"]
+  },
+  "budgets": {"runtimeMs": 120000, "maxPages": 12, "maxStates": 25, "maxActions": 40, "maxActionsPerState": 4, "maxDepth": 3, "maxSignals": 100, "maxEvidence": 12, "workers": 2, "actionTimeoutMs": 4000, "navigationTimeoutMs": 15000, "settleMs": 350, "readinessTimeoutMs": 1500},
+  "tasks": [{"id": "import-required-cases", "lane": "test-case", "feature": "Original test-case intake", "startUrl": "https://example.com/", "required": true, "steps": [{"id": "missing-source", "action": "manual", "description": "Import every original test-case step before claiming coverage"}]}]
+}

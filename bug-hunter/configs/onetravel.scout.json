@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "cycle": {
+    "id": "562706", "title": "OneTravel Academy Challenge — constrained scout",
+    "overview": "Imported from supplied overview. Search flights/hotels/cars and booking flow before final purchase. Current full test-case definitions have not been imported; this configuration cannot claim complete test-case coverage.",
+    "inScope": ["OneTravel flight/hotel/car search and selection", "Filters, sorting, valid itinerary changes, state and price consistency", "Booking flow before purchase; local version when available"],
+    "outOfScope": ["Partner/external sites; contact us", "Orders, payments or adding payment methods", "Field validation, accessibility, usability, security", "Minor visuals, resized-window issues", "Current-cycle duplicates including permutations"],
+    "sources": ["User supplied Academy Challenge overview", "https://platform.utest.com/testcycles/562706/", "MASTER_BUG_LIBRARY.md and BUG_LESSONS.md are heuristics, not duplicate evidence"],
+    "evidence": ["Highlighted PNG/JPG", "Silent MP4 recording", "Console TXT/LOG with timestamps and Navigated to homepage", "Mask personal information", "Cycle requires issue reproduced more than twice before submission"],
+    "currentIssues": {"status": "not-checked", "items": []}
+  },
+  "browser": {"headless": true, "channel": "chrome"},
+  "scope": {"allowedOrigins": ["https://www.onetravel.com"], "assetOrigins": [], "includePaths": ["^/$", "^/trip/", "^/air/", "^/cars/"], "excludePatterns": ["/info/contact", "/payment", "/profiles", "/press"]},
+  "safety": {"allowedActionNames": ["^(Flights|Hotels|Cars|Search|Search flights|Show more|Show less|Clear all filters|Sort by.*|Next|Previous)$"], "readOnlyPostRules": [], "privateDataSelectors": ["input", "[aria-label*=account i]"]},
+  "budgets": {"runtimeMs": 45000, "maxPages": 5, "maxStates": 10, "maxActions": 12, "maxActionsPerState": 3, "maxDepth": 1, "maxSignals": 30, "maxEvidence": 3, "workers": 1, "actionTimeoutMs": 4000, "navigationTimeoutMs": 15000, "settleMs": 500, "readinessTimeoutMs": 2000},
+  "tasks": [
+    {"id":"required-intake","lane":"test-case","feature":"Full original test case not supplied to engine","startUrl":"https://www.onetravel.com/","required":true,"steps":[{"id":"import-original","action":"manual","description":"Import every original step, including registration/preferences and other steps, from current cycle before executing the required sweeper"}]},
+    {"id":"search-scout","lane":"quick-win","feature":"Search controls","startUrl":"https://www.onetravel.com/","required":false,"steps":[],"crawl":true}
+  ]
+}
